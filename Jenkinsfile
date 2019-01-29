@@ -14,10 +14,5 @@ pipeline {
                 echo 'hello2'
             }
         }
-        stage('another job') {
-            node {
-                def job = build job: 'hello2'
-            }
-        }
     }
 }
