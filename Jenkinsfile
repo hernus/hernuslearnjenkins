@@ -15,7 +15,9 @@ pipeline {
             }
         }
         stage('Other job') {
-            build job: 'hello1'
+            steps {
+                build job: 'hello1'
+            }
         }
 
     }
