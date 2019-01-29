@@ -14,5 +14,9 @@ pipeline {
                 echo 'hello2'
             }
         }
+        stage('Other job') {
+            build job: 'hello1'
+        }
+
     }
 }
